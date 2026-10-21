@@ -1,0 +1,8 @@
+# Local DuckDB warehouse; the cloud target is chosen in Milestone 5
+cms_hospital_quality:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: "{{ env_var('DUCKDB_PATH', '../data/warehouse.duckdb') }}"
+      threads: 4

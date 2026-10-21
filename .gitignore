@@ -1,0 +1,27 @@
+# Data never goes in git (only tiny samples under tests/fixtures/)
+data/*
+!data/.gitkeep
+*.duckdb
+*.duckdb.wal
+
+# dbt
+dbt/target/
+dbt/logs/
+dbt/dbt_packages/
+logs/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+# Secrets / local config
+.env
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
